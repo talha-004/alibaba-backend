@@ -1,0 +1,58 @@
+# ----------------------
+# Node & Dependencies
+# ----------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ----------------------
+# Environment Variables
+# ----------------------
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ----------------------
+# Build / Output
+# ----------------------
+dist/
+build/
+coverage/
+.tmp/
+.cache/
+
+# ----------------------
+# Logs
+# ----------------------
+logs/
+*.log
+log.txt
+
+# ----------------------
+# OS/System Files
+# ----------------------
+.DS_Store
+Thumbs.db
+
+# ----------------------
+# IDE / Editor
+# ----------------------
+.vscode/
+.vscode/*    # If you want the whole folder ignored
+!.vscode/settings.json   # Uncomment if you want to keep project settings
+!.vscode/extensions.json # Optional
+
+.idea/
+*.swp
+
+# ----------------------
+# TypeScript (if using TS)
+# ----------------------
+*.tsbuildinfo
