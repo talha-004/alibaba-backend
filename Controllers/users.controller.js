@@ -29,6 +29,7 @@ export const registerUser = async (req, res) => {
       password: hashPassword,
       role,
     });
+
     res.status(200).json({
       success: true,
       message: "User registered Successfully!",
@@ -46,6 +47,7 @@ export const registerUser = async (req, res) => {
 export const login = async (req, res) => {
   try {
     const { email, password } = req.body;
+
     const registerUser = await UserModel.findOne({ email });
 
     if (registerUser) {
