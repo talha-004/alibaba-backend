@@ -12,6 +12,8 @@ applyMiddleware(app);
 
 app.use("/api/v1", apiRouter);
 
+app.get("/health", (req, res) => res.send("Searver is Healthy!"));
+
 // error middleware (added at last becasue error come after all routes exucation)
 app.use(appErrorHandler);
 
