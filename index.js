@@ -1,6 +1,6 @@
 import express from "express";
 import apiRouter from "./Routers/indexRoute.js";
-import { applyMiddleware } from "./config/global.middlewares.js";
+import { applyMiddleware } from "./Config/global.middlewares.js";
 import { env } from "./Config/env.config.js";
 import { dbConnect } from "./Config/db.connect.js";
 import { appErrorHandler } from "./Middlewares/errorHandler.js";
